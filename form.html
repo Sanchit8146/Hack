@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+</head>
+
+<body>
+    <div class="form-body without-side">
+        <div class="row">
+            <div class="img-holder">
+                <div class="info-holder">
+                    <img src="images/graphic6.svg" alt="">
+                </div>
+            </div>
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3 class="text-center">Create Meeting</h3>
+                        <form>
+                            <div class="section over-hide z-bigger">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-10 pb-4">
+                                        <input class="platform" type="radio" name="apps" id="app-1" value="gmeet">
+                                        <label class="for-platform" for="app-1">
+                                            <span data-hover="G MEET">G MEET</span>
+                                        </label>
+                                        <input class="platform" type="radio" name="apps" id="app-2" value="zoom">
+                                        <label class="for-platform" for="app-2">
+                                            <span data-hover="ZOOM">ZOOM</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <input class="form-control" type="text" name="name" placeholder="Host Name" required>
+                            <input class="form-control" type="text" name="purpose" placeholder="Purpose" required>
+                            <input class="form-control" type="text" name="time" placeholder="Time of Meeting" required>
+                            <select class="form-control">
+                                <option value="NUll" selected disabled>
+                                    Add People
+                                </option>
+                                <option value="Sanchit">Sanchit</option>
+                                <option value="Sulbha">Sulbha</option>
+                                <option value="Rupakshi">Rupakshi</option>
+                                <option value="Jack">Jack</option>
+                                <option value="Oliver">Oliver</option>
+                                <option value="Harry">Harry</option>
+                                <option value="Jacob">Jacob</option>
+                                <option value="Charlie">Charlie</option>
+                                <option value="Thomas">Thomas</option>
+                                <option value="George">George</option>
+                            </select>
+                            <div class="form-button text-center">
+                                <button id="submit" type="submit" class="ibtn">SEND
+                                    INVITES</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
