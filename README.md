@@ -1,4 +1,4 @@
-# Vmeet
+# We meet
 Aunique platform created to connect with your classmates.
 
 ## Usage
