@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <!--
+  ArcGIS API for JavaScript, https://js.arcgis.com
+  For more information about the intro-sceneview sample, read the original sample description at developers.arcgis.com.
+  https://developers.arcgis.com/javascript/latest/sample-code/intro-sceneview/index.html
+  -->
+<title>Intro to SceneView - Create a 3D map - 4.14</title>
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+      overview {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 300px;
+        height: 200px;
+        border: 1px solid black;
+        z-index:1;
+        overflow: hidden;
+      }
+
+      #extentDiv {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        z-index: 2;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.14/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.14/"></script>
+
+    <script>
+      require(["esri/Map", "esri/views/SceneView", "esri/widgets/Search", "esri/views/navigation/Navigation", "esri/tasks/RouteTask",
+        "esri/views/MapView", "esri/Graphic"],
+        function(Map, SceneView, Search, Navigation, MapView, Graphic) {
+
+        var map = new Map({
+          basemap: "streets",
+          ground: "world-elevation"
+        });
+
+
+        var view = new SceneView({
+          container: "viewDiv",
+          map: map,
+          //scale: 100000,
+          camera : {
+            position: {
+              x: -122.272781,
+              y: 37.41666,
+              z: 25000
+            },
+            tilt: 65 // perspective degrees
+          }
+        });
+
+        var searchWidget = new Search({
+          view: view
+        });
+
+        view.ui.add(searchWidget, {
+          position: "top-right"
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>
