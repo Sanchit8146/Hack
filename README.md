@@ -1,5 +1,5 @@
-# We meet
-Aunique platform created to connect with your classmates.
+# We Connect
+A unique platform created to connect with your classmates.
 
 ## Usage
 An *ML based web platform* which not only enables students to organize all their virtual meetings with fellow students, but more importantly helps them to get to know their fellow classmates before they virtually start a meeting with them. Based on your interests it also recommends fun and insightful virtual meetings happening near them to relieve student from school related stress while making sure that they constantly upskill themselves in this fast paced digital world. This would also help prevent strange culture within an organization where employees spend much time getting to know each other. 
