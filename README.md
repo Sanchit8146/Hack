@@ -1,4 +1,4 @@
-# We Connect
+# We Meet
 A unique platform created to connect with your classmates.
 
 ## Usage
